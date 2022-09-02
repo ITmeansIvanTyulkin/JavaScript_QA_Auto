@@ -1,0 +1,38 @@
+const moneyAmount = 100;
+console.log('Вы внесли ' + moneyAmount + ' рублей.');
+
+const americano = 100;
+const capuccino = 150;
+const water = 50;
+const milkShake = 180;
+const tea = 75;
+Boolean(cannotBuyAnything) = false;
+
+if (moneyAmount >= americano) {
+  console.log('Вы можете купить Американо.');
+  Boolean(cannotBuyAnything) = false;
+}
+
+if (moneyAmount >= capuccino) {
+  console.log('Вы можете купить Капучино.');
+  Boolean(cannotBuyAnything) = false;
+}
+
+if (moneyAmount >= water) {
+  console.log('Вы можете купить Воду.');
+  Boolean(cannotBuyAnything) = false;
+}
+
+if (moneyAmount >= milkShake) {
+    console.log('Вы можете купить Молочный Коктейль.');
+    Boolean(cannotBuyAnything) = false;
+  }
+
+  if (moneyAmount >= tea) {
+    console.log('Вы можете купить Чай.');
+    Boolean(cannotBuyAnything) = false;
+  }
+
+  if (Boolean(cannotBuyAnything) === false) {
+    console.log('Недостаточно средств для покупки напитка! Введите купюру в купюроприёмник или оплатите банковской картой');
+  }
